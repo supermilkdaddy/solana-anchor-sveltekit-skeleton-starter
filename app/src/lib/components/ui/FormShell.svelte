@@ -24,7 +24,7 @@
 			<slot name="form-content">
 				<label for="color">
 					<span>Color</span>
-					<input type="text" id="color" minlength="2" required />
+					<input class="input" type="text" id="color" minlength="2" required />
 				</label>
 
 				<button class="btn variant-ringed-primary" type="submit">

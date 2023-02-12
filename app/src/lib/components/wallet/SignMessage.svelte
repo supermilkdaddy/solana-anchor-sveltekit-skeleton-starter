@@ -4,6 +4,8 @@
 	import * as anchor from '@project-serum/anchor';
 	import { sign } from 'tweetnacl';
 
+  // FIXME Phantom signMessage() fails on devnet but Solflare works...
+
 	$: ({ publicKey, signMessage } = $walletStore);
 
 	async function handleSignMessage() {
@@ -22,7 +24,7 @@
 
 			toastStore.trigger({
         preset: "success",
-				message: `Sign message successful! ${anchor.utils.bytes.bs58.encode(signature.slice(0, 8))}...`,
+				message: 'Sign message successful!',
 				autohide: true,
 				timeout: 3000,
 			});

@@ -392,7 +392,7 @@
 			<form class="space-y-4" on:submit|preventDefault={handleCreateLedgerAccount}>
 				<label for="color">
 					<span>Color</span>
-					<input type="text" id="color" bind:value={color} minlength="2" required />
+					<input class="input" type="text" id="color" bind:value={color} minlength="2" required />
 				</label>
 
 				<button class="btn variant-filled-primary" type="submit">
@@ -417,12 +417,12 @@
 			>
 				<label for="color">
 					<span>Color</span>
-					<input type="text" id="color" bind:value={color} minlength="2" required />
+					<input class="input" type="text" id="color" bind:value={color} minlength="2" required />
 				</label>
 
 				<label for="seed">
 					<span>Seed</span>
-					<input type="text" id="seed" bind:value={seed} minlength="2" required />
+					<input class="input" type="text" id="seed" bind:value={seed} minlength="2" required />
 				</label>
 
 				<button class="btn variant-filled-tertiary" type="submit">
@@ -441,12 +441,12 @@
 			<form class="p-4 space-y-4" on:submit|preventDefault={handleModifyLedgerAccount}>
 				<label for="color">
 					<span>Color</span>
-					<input type="text" id="color" bind:value={color} minlength="2" required />
+					<input class="input" type="text" id="color" bind:value={color} minlength="2" required />
 				</label>
 
 				<label for="new-balance">
 					<span>New Balance</span>
-					<input type="text" id="new-balance" bind:value={newBalance} minlength="1" required />
+					<input class="input" type="text" id="new-balance" bind:value={newBalance} minlength="1" required />
 				</label>
 
 				<button class="btn variant-filled-tertiary">
@@ -474,12 +474,12 @@
 			>
 				<label for="color">
 					<span>Color</span>
-					<input type="text" id="color" bind:value={color} minlength="2" required />
+					<input class="input" type="text" id="color" bind:value={color} minlength="2" required />
 				</label>
 
 				<label for="operation">
 					<span>Operation</span>
-					<select name="operation" id="operation" bind:value={operation}>
+					<select class="select" name="operation" id="operation" bind:value={operation}>
 						<option value="1" selected>+</option>
 						<option value="2">-</option>
 						<option value="3">*</option>

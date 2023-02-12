@@ -32,7 +32,7 @@
 				<form class="space-y-4">
 					<label for="color">
 						<span>Color</span>
-						<input type="text" id="color" minlength="2" required />
+						<input class="input" type="text" id="color" minlength="2" required />
 					</label>
 
 					<button class="btn variant-ringed-primary" type="submit">
@@ -54,12 +54,12 @@
 				<form class="p-4 space-y-4">
 					<label for="color">
 						<span>Color</span>
-						<input type="text" id="color" minlength="2" required />
+						<input class="input" type="text" id="color" minlength="2" required />
 					</label>
 
 					<label for="seed">
 						<span>Seed</span>
-						<input type="text" id="seed" minlength="2" required />
+						<input class="input" type="text" id="seed" minlength="2" required />
 					</label>
 
 					<button class="btn variant-filled-accent" type="submit">
@@ -78,12 +78,12 @@
 				<form class="p-4 space-y-4">
 					<label for="color">
 						<span>Color</span>
-						<input type="text" id="color" minlength="2" required />
+						<input class="input" type="text" id="color" minlength="2" required />
 					</label>
 
 					<label for="new-balance">
 						<span>New Balance</span>
-						<input type="text" id="new-balance" minlength="2" required />
+						<input class="input" type="text" id="new-balance" minlength="2" required />
 					</label>
 
 					<button class="btn variant-filled-surface">
@@ -108,12 +108,12 @@
 				<form class="space-y-4">
 					<label for="color">
 						<span>Color</span>
-						<input type="text" id="color" minlength="2" required />
+						<input class="input" type="text" id="color" minlength="2" required />
 					</label>
 
 					<label for="operation">
 						<span>Operation</span>
-						<select name="operation" id="operation">
+						<select class="select" name="operation" id="operation">
 							<option value="1" selected>+</option>
 							<option value="2">-</option>
 							<option value="3">*</option>
@@ -123,7 +123,7 @@
 
 					<label for="operation-value">
 						<span>Operation Value</span>
-						<input type="text" id="operation-value" minlength="2" required />
+						<input class="input" type="text" id="operation-value" minlength="2" required />
 					</label>
 
 					<button class="btn variant-filled-primary" type="submit">

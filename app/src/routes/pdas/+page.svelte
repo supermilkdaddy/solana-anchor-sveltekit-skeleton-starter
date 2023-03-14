@@ -72,7 +72,7 @@
 			return ledgerData;
 		} catch (error: any) {
 			toastStore.trigger({
-				preset: 'error',
+				background: 'error',
 				message: 'Error fetching ledger account!',
 				autohide: true,
 				timeout: 3000
@@ -106,7 +106,7 @@
 				.rpc();
 
 			toastStore.trigger({
-				preset: 'success',
+				background: 'success',
 				message: 'Ledger account created!',
 				autohide: true,
 				timeout: 3000,
@@ -117,7 +117,7 @@
 			});
 		} catch (error: any) {
 			toastStore.trigger({
-				preset: 'error',
+				background: 'error',
 				message: 'Error creating ledger account!',
 				autohide: true,
 				timeout: 3000,
@@ -228,7 +228,7 @@
 			.rpc();
 
 		toastStore.trigger({
-			preset: 'success',
+			background: 'success',
 			message: 'Ledger account modified!',
 			autohide: true,
 			timeout: 3000,
@@ -326,7 +326,7 @@
 			.rpc();
 
 		toastStore.trigger({
-      preset: 'success',
+      background: 'success',
 			message: 'Ledger account created!',
 			autohide: true,
 			timeout: 3000,
@@ -490,6 +490,7 @@
 				<label for="operation-value">
 					<span>Operation Value</span>
 					<input
+            class="input"
 						type="text"
 						id="operation-value"
 						bind:value={operationValue}

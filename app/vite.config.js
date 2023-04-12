@@ -22,6 +22,16 @@ const config = {
       protocolImports: true
     })
   ],
+  // U: Updated to TS 5+ and encountered build errors
+  // [vite] ERROR: Could not resolve "react" and "react-dom"
+  // I believe it's a build.rollupOptions.external config issue
+  // REF: https://stackoverflow.com/questions/67696920/vite-rollup-failed-to-resolve-build-error
+  // A: WORKS!
+  build: {
+    rollupOptions: {
+      external: ['react', 'react-dom']
+    }
+  },
   test: {
     include: ['src/**/*.{test,spec}.{js,ts}']
   }
